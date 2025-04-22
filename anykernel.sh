@@ -4,7 +4,7 @@
 ## AnyKernel setup
 # begin properties
 properties() { '
-do.devicecheck=0
+do.devicecheck=1
 do.modules=0
 do.systemless=1
 do.cleanup=1
@@ -35,8 +35,6 @@ case "$userflavor" in
 esac;
 ui_print "  -> $os_string is detected!";
 
-# If you have some problems with the new kernel, try to uncomment the following line to also flash the [dtb].
-# mv $home/kernels/dtb $home/dtb;
 
 ## AnyKernel boot install
 split_boot;
